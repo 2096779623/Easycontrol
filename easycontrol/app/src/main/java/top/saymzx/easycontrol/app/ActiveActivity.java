@@ -1,3 +1,5 @@
+
+/*
 package top.saymzx.easycontrol.app;
 
 import android.app.Activity;
@@ -78,3 +80,4 @@ public class ActiveActivity extends Activity {
   public void onBackPressed() {
   }
 }
+*/
