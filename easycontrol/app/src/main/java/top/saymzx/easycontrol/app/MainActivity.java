@@ -57,7 +57,7 @@ public class MainActivity extends Activity {
   // 启动步骤
   private void startApp() {
     // 检测激活
-    checkActive();
+    //checkActive();
     // 设置设备列表适配器
     deviceListAdapter = new DeviceListAdapter(this);
     activityMainBinding.devicesList.setAdapter(deviceListAdapter);
@@ -73,12 +73,11 @@ public class MainActivity extends Activity {
       for (Device device : AdbTools.devicesList) if (device.connectOnStart) Client.startDevice(device);
     }, 2000);
   }
-
-  // 检测激活
+/*  
   private void checkActive() {
     if (!AppData.setting.getIsActive()) startActivity(new Intent(this, ActiveActivity.class));
   }
-
+*/
   // 检查权限
   private boolean checkPermission() {
     // 检查悬浮窗权限，防止某些设备如鸿蒙不兼容
